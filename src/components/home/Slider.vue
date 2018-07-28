@@ -1,14 +1,15 @@
 <template>
     <div>
         <template v-if="loader">
-        <v-carousel hide-controls>
-            <v-carousel-item v-for="item in slider" :key="item.id" :src="apihost+'/'+item.image_url">
+        <v-carousel hide-controls hideDelimiters>
+            <v-carousel-item v-for="item in slider" :key="item.id" :src="apihost+'/'+item.image_url" class="img-responsive">
             </v-carousel-item>
         </v-carousel>
+            <h1>here tag </h1>
         </template>
         <template v-else>
             <div id="app">
-                <img src="loader.gif"/>
+                <img src="../../assets/loader.gif"/>
             </div>
         </template>
     </div>
@@ -46,3 +47,20 @@
     }
 </script>
 
+<style>
+    .v-jumbotron__image {
+        display: block;
+        margin:  0 auto;
+        position: unset;
+        top: unset;
+        left: unset;
+        transform: unset;
+
+    }
+    .v-jumbotron__wrapper img{
+        width: 100%;
+        height: 100%;
+    }
+
+
+</style>
