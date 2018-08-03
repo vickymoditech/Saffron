@@ -6,19 +6,19 @@
             <div class="row row-pb-md">
                 <div class="col-md-3 colorlib-widget">
                     <h4>About Imahe</h4>
-                    <p>Far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
                     <p>
+                        Far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics
+                    </p>
                     <ul class="colorlib-social-icons">
                         <li><a href="#"><i class="icon-twitter"></i></a></li>
                         <li><a href="#"><i class="icon-facebook"></i></a></li>
                         <li><a href="#"><i class="icon-linkedin"></i></a></li>
                         <li><a href="#"><i class="icon-dribbble"></i></a></li>
                     </ul>
-                    </p>
+
                 </div>
                 <div class="col-md-3 colorlib-widget">
                     <h4>Information</h4>
-                    <p>
                     <ul class="colorlib-footer-links">
                         <li><router-link to="/"><i class="icon-check"></i>Home</router-link></li>
                         <li><router-link to="/about"><i class="icon-check"></i>About</router-link></li>
@@ -26,7 +26,7 @@
                         <li><router-link to="/contact"><i class="icon-check"></i>Contact</router-link></li>
                         <li><router-link to="/gallery"><i class="icon-check"></i>Gallery</router-link></li>
                     </ul>
-                    </p>
+
                 </div>
 
                 <div class="col-md-3 colorlib-widget">

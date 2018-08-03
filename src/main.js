@@ -4,11 +4,12 @@ import router from './router'
 import store from './store'
 //import 'bootstrap/dist/css/bootstrap.css'
 //import 'bootstrap-vue/dist/bootstrap-vue.css'
-import Vuetify from 'vuetify'
+import Vuetify from 'vuetify';
 
 
 
-//Vue.use(Vuetify);
+
+Vue.use(Vuetify);
 Vue.config.productionTip = false
 
 new Vue({

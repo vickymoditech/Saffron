@@ -78,3 +78,11 @@
         name:'Gallary'
     }
 </script>
+    .colorlib-gallery{
+        padding: 3em 0;
+    }
+<style>
+
+
+
+</style>

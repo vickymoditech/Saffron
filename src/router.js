@@ -22,11 +22,6 @@ export default new Router({
           component: About
       },
       {
-          path: '/about',
-          name: 'about',
-          component: About
-      },
-      {
           path: '/contact',
           name: 'contact',
           component: Contact

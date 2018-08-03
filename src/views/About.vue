@@ -20,7 +20,7 @@
         <div id="colorlib-about">
             <div class="container">
                 <div class="row row-pb-lg">
-                    <div class="col-md-6 animate-box">
+                    <div class="col-md-6">
                         <div class="video colorlib-video" style="background-image: url(images/about.jpg);">
                             <a href="https://vimeo.com/channels/staffpicks/93951774" class="popup-vimeo"><i class="icon-play3"></i></a>
                             <div class="overlay"></div>
@@ -33,7 +33,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
+                    <div class="col-md-8 col-md-offset-2 text-center colorlib-heading">
                         <h2>Our Team</h2>
                         <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name</p>
                     </div>
@@ -121,6 +121,16 @@
 
 <script>
     export default {
-        name:'About.vue'
+        name:'About.vue',
+        data(){
+        return {
+            videoId: 'lG0Ys-2d4MA',
+            playerVars: {
+                autoplay: 1
+            }
+        }
+    },
+    methods: {
+    }
     }
 </script>
