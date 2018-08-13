@@ -1,6 +1,8 @@
 <template>
     <div>
 
+        <NavBar></NavBar>
+
         <section id="home" class="video-hero" style="height: 800px; background-image: url(images/cover_img_2.jpg);  background-size:cover; background-position: center center;background-attachment:fixed;" data-section="home">
             <div class="overlay"></div>
             <div class="display-t text-center">
@@ -20,9 +22,9 @@
         <div id="colorlib-contact">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 col-md-push-8">
+                    <div>
                         <h2>Contact Information</h2>
-                        <div class="row">
+                        <div>
                             <div class="col-md-12">
                                 <div class="contact-info-wrap-flex">
                                     <div class="con-info">
@@ -41,57 +43,29 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-8 col-md-pull-4">
-                        <h2>Get In Touch</h2>
-                        <form action="#">
-                            <div class="row form-group">
-                                <div class="col-md-6">
-                                    <!-- <label for="fname">First Name</label> -->
-                                    <input type="text" id="fname" class="form-control" placeholder="Your firstname">
-                                </div>
-                                <div class="col-md-6">
-                                    <!-- <label for="lname">Last Name</label> -->
-                                    <input type="text" id="lname" class="form-control" placeholder="Your lastname">
-                                </div>
-                            </div>
-
-                            <div class="row form-group">
-                                <div class="col-md-12">
-                                    <!-- <label for="email">Email</label> -->
-                                    <input type="text" id="email" class="form-control" placeholder="Your email address">
-                                </div>
-                            </div>
-
-                            <div class="row form-group">
-                                <div class="col-md-12">
-                                    <!-- <label for="subject">Subject</label> -->
-                                    <input type="text" id="subject" class="form-control" placeholder="Your subject of this message">
-                                </div>
-                            </div>
-
-                            <div class="row form-group">
-                                <div class="col-md-12">
-                                    <!-- <label for="message">Message</label> -->
-                                    <textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Say something about us"></textarea>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <input type="submit" value="Send Message" class="btn btn-primary">
-                            </div>
-                        </form>
-                    </div>
                 </div>
             </div>
         </div>
 
-        <div id="map" class="colorlib-map"></div>
+        <div id="map" class="colorlib-map">
+
+            <div style="width: 100%"><iframe width="100%" height="600" src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=Malet%20St%2C%20London%20WC1E%207HU%2C%20United%20Kingdom+(Your%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.mapsdirections.info/en/custom-google-maps/">Embed Google Map</a> by <a href="https://www.mapsdirections.info/en/">Measure area on map</a></iframe></div><br />
+
+        </div>
+
+        <Footer></Footer>
 
     </div>
 </template>
 
 
 <script>
+
+    import Footer from '../components/home/Footer';
+    import NavBar from '../components/home/NavBar';
+
     export default {
-        name:'Contact'
+        name:'Contact',
+        components:{Footer,NavBar}
     }
 </script>

@@ -23,7 +23,7 @@
                 <div class="container">
                     <div class="col-md-10 col-md-offset-1">
                         <div>
-                            <h1 class="holder"><span>Fashion Photoshoot</span></h1>
+                            <h1 class="holder"><span>Saffron Hair and Beauty</span></h1>
                             <h2>Saffron</h2>
                             <p>29.07.2018</p>
                             <p><a href="gallery.html" class="btn btn-primary btn-custom">Online Booking</a></p>

@@ -1,5 +1,8 @@
 <template>
     <div>
+
+        <NavBar></NavBar>
+
         <section id="home" class="video-hero" style="height: 800px; background-image: url(images/cover_img_2.jpg);  background-size:cover; background-position: center center;background-attachment:fixed;" data-section="home">
             <div class="overlay"></div>
             <div class="display-t text-center">
@@ -55,11 +58,19 @@
                 </div>
             </div>
         </div>
+
+        <Footer></Footer>
+
     </div>
 </template>
 
 <script>
+
+    import Footer from '../components/home/Footer';
+    import NavBar from '../components/home/NavBar';
+
 export default {
-    name:'Service'
+    name:'Service',
+    components:{Footer,NavBar}
 }
 </script>

@@ -5,7 +5,7 @@
         <div class="container">
             <div class="row row-pb-md">
                 <div class="col-md-3 colorlib-widget">
-                    <h4>About Imahe</h4>
+                    <h4>About Saffon</h4>
                     <p>
                         Far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics
                     </p>

@@ -6,6 +6,8 @@ import About from './views/About.vue'
 import Contact from './views/Contact';
 import Gallery from './views/Gallery';
 import Service from './views/Service';
+import AdminMain from './views/AdminMain';
+import Error404 from './views/Error404';
 
 Vue.use(Router)
 
@@ -35,8 +37,16 @@ export default new Router({
           path: '/service',
           name: 'service',
           component: Service
+      },
+      {
+          path: '/admin',
+          name: 'admin',
+          component: AdminMain
+      },
+      {
+          path: '/*',
+          name: '404',
+          component:Error404
       }
-
-
   ]
 })
