@@ -21,40 +21,29 @@
 
         <div id="colorlib-services">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-4 text-center ">
-                        <div class="services">
-							<span class="icon">
-								<i class="icon-camera4"></i>
-							</span>
+                <div class="row" v-if="loader" v-for="(s,index) in service">
+                    <div class="col-md-4" v-for="(service,indexService) in s" :key="service.id">
+                        <article class="article-entry">
+                            <a href="blog.html">
+                                <div class="blog-img">
+                                    <img
+                                            class="img-responsive"
+                                            :src="apiurl+service.image_url"
+                                            alt="">
+                                </div>
+                            </a>
                             <div class="desc">
-                                <h3>Photography</h3>
-                                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                <a href="blog.html"><h2>{{service.title}}</h2></a>
+                                <p>{{service.discription}}</p>
                             </div>
-                        </div>
+                        </article>
                     </div>
-                    <div class="col-md-4 text-center ">
-                        <div class="services">
-							<span class="icon">
-								<i class="icon-image2"></i>
-							</span>
-                            <div class="desc">
-                                <h3>Image Processing</h3>
-                                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <div class="services">
-							<span class="icon">
-								<i class="icon-video3"></i>
-							</span>
-                            <div class="desc">
-                                <h3>Videography</h3>
-                                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                            </div>
-                        </div>
-                    </div>
+                </div>
+
+                <div class="center" v-else>
+                    <center>
+                        <rotate-square2></rotate-square2>
+                    </center>
                 </div>
             </div>
         </div>
@@ -68,9 +57,40 @@
 
     import Footer from '../components/home/Footer';
     import NavBar from '../components/home/NavBar';
+    import {mapState} from 'vuex';
+    import {RotateSquare2} from 'vue-loading-spinner'
+    import {apihost} from '../Api';
 
 export default {
     name:'Service',
-    components:{Footer,NavBar}
+    components:{Footer,NavBar,RotateSquare2},
+    data() {
+        return {}
+    },
+    computed: {
+        service: function () {
+
+            let service = this.$store.state.service;
+            if (service.length > 0) {
+                console.log("user state will be change that time call here (Service)");
+            } else {
+                console.log("first time (Service)");
+            }
+            console.log(service);
+            return service;
+        },
+        loader: function () {
+            return this.$store.state.serviceLoader;
+        },
+        apiurl: function () {
+            return apihost;
+        }
+    }
 }
 </script>
+<style scoped>
+    .center {
+        margin: auto;
+        width: 50%;
+    }
+</style>

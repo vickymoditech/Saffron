@@ -7,24 +7,35 @@
                 <div class="col-md-3 colorlib-widget">
                     <h4>About Saffon</h4>
                     <p>
-                        Far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics
+                        Far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live
+                        in Bookmarksgrove right at the coast of the Semantics
                     </p>
                     <ul class="colorlib-social-icons">
-                        <li><a href="#"><i class="icon-twitter"></i></a></li>
-                        <li><a href="#"><i class="icon-facebook"></i></a></li>
-                        <li><a href="#"><i class="icon-linkedin"></i></a></li>
-                        <li><a href="#"><i class="icon-dribbble"></i></a></li>
+
+                        <li><a href="#"><i class="icon-facebook"></i></a></li> &nbsp;
+                        <li><a href="#"><i class="icon-instagram"></i></a></li>
+
                     </ul>
 
                 </div>
                 <div class="col-md-3 colorlib-widget">
                     <h4>Information</h4>
                     <ul class="colorlib-footer-links">
-                        <li><router-link to="/"><i class="icon-check"></i>Home</router-link></li>
-                        <li><router-link to="/about"><i class="icon-check"></i>About</router-link></li>
-                    <li><router-link to="/service"><i class="icon-check"></i>Service</router-link></li>
-                        <li><router-link to="/contact"><i class="icon-check"></i>Contact</router-link></li>
-                        <li><router-link to="/gallery"><i class="icon-check"></i>Gallery</router-link></li>
+                        <li>
+                            <router-link to="/"><i class="icon-check"></i>Home</router-link>
+                        </li>
+                        <li>
+                            <router-link to="/about"><i class="icon-check"></i>About</router-link>
+                        </li>
+                        <li>
+                            <router-link to="/service"><i class="icon-check"></i>Service</router-link>
+                        </li>
+                        <li>
+                            <router-link to="/contact"><i class="icon-check"></i>Contact</router-link>
+                        </li>
+                        <li>
+                            <router-link to="/gallery"><i class="icon-check"></i>Gallery</router-link>
+                        </li>
                     </ul>
 
                 </div>
@@ -75,9 +86,12 @@
                 <div class="row">
                     <div class="col-md-12 text-center">
                         <p>
-                            <small  class="block">
-                                Copyright All rights reserved | This Project is made with <i class="icon-heart" aria-hidden="true"></i> by XYZ
-                            </small><br>
+                            <small class="block">
+                                Copyright All rights reserved | This Project is made with <i class="icon-heart"
+                                                                                             aria-hidden="true"></i> by
+                                XYZ
+                            </small>
+                            <br>
                         </p>
                     </div>
                 </div>
@@ -92,6 +106,6 @@
 
 <script>
     export default {
-        name:''
+        name: ''
     }
 </script>

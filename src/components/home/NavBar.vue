@@ -4,7 +4,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-2 col-md-push-5 text-center">
-                        <div id="colorlib-logo"><a href="index.html"><i class="icon-camera4"></i>Saffron</a></div>
+                        <div id="colorlib-logo"><router-link to="/"><i class="icon-airplane"></i>Saffron</router-link></div>
                     </div>
                     <div id="nav" class="col-md-5 col-md-pull-2 text-right menu-1">
                         <ul>

@@ -9,7 +9,7 @@ import Service from './views/Service';
 import AdminMain from './views/AdminMain';
 import Error404 from './views/Error404';
 
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
   routes: [

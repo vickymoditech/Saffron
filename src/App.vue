@@ -1,27 +1,32 @@
 <template>
-  <div>
+    <div>
 
 
-      <router-view/>
+        <router-view/>
 
 
-  </div>
+    </div>
 </template>
 
 <script>
-    import { mapActions } from 'vuex'
+    import {mapActions} from 'vuex'
     import Home from '@/views/Home.vue';
-
 
     export default {
 
-        components:{Home},
-        methods:{
-            ...mapActions({initaction:'initaction'})
+        components: {Home},
+        methods: {
+            ...mapActions({
+                initaction: 'initaction',
+                initServiceAction: 'initServiceAction',
+                initTeamAction: 'initTeamAction'
+            })
         },
-        created(){
+        created() {
 
             this.initaction();
+            this.initServiceAction();
+            this.initTeamAction();
 
         }
     }
@@ -30,7 +35,6 @@
 
 
 <style>
-
 
 
 </style>

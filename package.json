@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "vue-cli-service serve --port 8081",
+    "start": "vue-cli-service serve --port 9001",
     "dev": "vue-cli-service serve",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -11,10 +11,12 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "babel-polyfill": "^6.26.0",
     "bootstrap-vue": "^2.0.0-rc.9",
     "material-design-icons-iconfont": "^3.0.3",
     "nodemon": "^1.18.3",
     "uuid": "^3.2.1",
+    "v-viewer": "^1.2.0",
     "vue": "^2.5.16",
     "vue-carousel": "^0.10.0",
     "vue-loading-spinner": "^1.0.11",
@@ -42,6 +44,9 @@
     "plugins": {
       "autoprefixer": {}
     }
+  },
+  "browser": {
+    "vue": "vue/dist/vue.common.js"
   },
   "jest": {
     "moduleFileExtensions": [

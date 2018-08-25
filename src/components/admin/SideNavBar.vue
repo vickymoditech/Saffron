@@ -1,21 +1,15 @@
 <template>
-    <vue-tree-navigation :items="items" />
+    <div>
+        Admin dashboard
+    </div>
 </template>
 
 
 <script>
     export default {
-        name:'SideNavBar',
+        name: 'SideNavBar',
         data() {
-            return {
-                items: [
-                    { name: 'First category', children: [
-                            { name: 'Category item', href: '#/' },
-                            { name: 'Category item', href: '#/about' }
-                        ]},
-                    { name: 'Second category', href: '#take-me-somewhere' }
-                ],
-            }
+            return {}
         }
     };
 </script>
